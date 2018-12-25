@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
 import numpy as np
 from sklearn.decomposition import PCA
@@ -9,6 +10,7 @@ import random as rand
 X = []
 Y = []
 
+##################  以下注释掉的语句包含了其他情况，可以自行去掉注释，观察效果  ###########################
 # for i in range(100000):   # square
 #     X.append(rand.uniform(-10, 10))
 #     Y.append(rand.uniform(-10, 10))
@@ -55,7 +57,7 @@ Y = []
 # [0.9924... 0.0075...]
 
 NUM = 1000
-for i in range(NUM):   # ellipse 
+for i in range(NUM):   # 椭圆情形 
     x = rand.uniform(-10, 10)
     y = rand.uniform(-10, 10)
     d1 = np.sqrt((x-6.5)**2 + (y-6.5)**2)
